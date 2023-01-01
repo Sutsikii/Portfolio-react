@@ -27,32 +27,36 @@ const Portfolio = () =>{
         },
         {
             id: 2,
-            imgSrc: Img3,
+            imgSrc: Img2,
         },
         {
             id: 3,
-            imgSrc: Img4,
+            imgSrc: Img3,
         },
         {
             id: 4,
-            imgSrc: Img5,
+            imgSrc: Img4,
         },
         {
             id: 5,
+            imgSrc: Img5,
+        },
+        {
+            id: 6,
             imgSrc: Img6,
         },
     ];
 
     return(
-        <section className='section h-[100vh] pt-[80px] relative grid grid-cols-3 gap-4 container justify-items-center'> 
+        <ul class="gallery"> 
             {data.map((item,index) =>{
                 return(
-                    <div key={index}>
+                    <li key={index}>
                         <img src={item.imgSrc}/>
-                    </div>
+                    </li>
                 )
             })}
-        </section>
+        </ul>
         );
     };
 

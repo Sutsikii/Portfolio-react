@@ -4,7 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.gallery{
+/* .gallery{
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -19,8 +19,30 @@ body{
     transition: all 350ms ease;
     cursor:pointer;
     margin-bottom: 12px;
-}
+} */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gallery{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    padding: 0 14px;
+    padding-top: 100px;
+}
+
+.gallery li{
+    list-style-type: none;
+    height: 350px;
+    flex-grow: 1;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
